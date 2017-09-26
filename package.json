@@ -1,0 +1,29 @@
+{
+  "name": "esm-ava-rollup",
+  "version": "1.0.0",
+  "description": "Test Repo ===",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "ava tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martypdx/esm-ava-rollup.git"
+  },
+  "author": "Marty Nelson <marty@martypdx.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martypdx/esm-ava-rollup/issues"
+  },
+  "homepage": "https://github.com/martypdx/esm-ava-rollup#readme",
+  "devDependencies": {
+    "@std/esm": "^0.11.0",
+    "ava": "^0.22.0"
+  },
+  "ava": {
+    "require": ["@std/esm", "./load-esm.js"]
+  }
+}
